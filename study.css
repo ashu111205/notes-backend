@@ -1,0 +1,132 @@
+
+/* Basic styling for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    display: flex; 
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    min-height: 100vh; /* Ensure the body takes full viewport height */
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Styling for input field containers */
+.inputbox {
+    margin-bottom: 20px;
+}
+
+/* Styling for input fields and textareas */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Adjust textarea height and make it resizable */
+textarea {
+    min-height: 100px;
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Placeholder text styling */
+input::placeholder,
+textarea::placeholder {
+    color: #999;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Button hover effect */
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styling for focus state of input and textarea */
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Blue shadow on focus */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+}
+/* Styling for the entire body */
+body {
+    background-image: url('dg3.jpeg'); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center; 
+    min-height: 100vh; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background-color: #f0f0f0;
+    
+}
+
+.container { 
+   
+    backdrop-filter: blur(5px); 
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+}
+.login {
+    box-shadow: 0px 0px 10px rgb(255, 118, 118), 
+    0px 0px 10px beige,0px 0px 10px rgb(255, 118, 118),
+    0px 0px 10px rgb(255, 118, 118),
+    0px 0px 10px rgb(22, 88, 255),
+    0px 0px 10px rgb(22, 88, 255),
+    0px 0px 10px rgb(22, 88, 255),
+    0px 0px 10px rgb(22, 88, 255),
+    0px 0px 10px rgb(22, 88, 255),
+    0px 0px 10px rgb(22, 88, 255);
+    transition: 0.5s ease-in-out;
+}
+.note {
+  background: #e6f7ff;
+  border-left: 5px solid #007acc;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+button.delete {
+  background: #e74c3c;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+}
